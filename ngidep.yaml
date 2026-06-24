@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: c1
-        image: nginxdemos/hello
+        image: sreejeshmv123/demo-nginx:fab64d4ddd306d44385661b0e77191da850f409f
       - name: c2
         image: redis
