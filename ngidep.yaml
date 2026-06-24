@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sree-nginx
+  namespace: sreejesh
+  annotations:
+    kubernetes.io/change-cause: "image tag updating to caddynline-perl for nginx"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: c1
+        image: nginxdemos/hello
