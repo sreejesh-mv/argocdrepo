@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: c1
-        image: sreejeshmv123/demo-nginx:0247f873c0065d933030aa9275ee64bc47cb0f24
+        image: sreejeshmv123/hello:smv
